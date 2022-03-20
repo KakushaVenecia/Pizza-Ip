@@ -1,0 +1,25 @@
+#show-contact {
+    display: none;
+  }
+
+#show-address { 
+  display: none;
+}
+  
+  .contact {
+    cursor: pointer;
+    color: #0088cc;
+  }
+  
+  .contact:hover {
+    text-decoration: underline;
+  }  
+  .button{
+     background-color: #0088cc;
+     color: white;
+     border: 1px;
+    
+  }
+  .btn{
+    background-color: rgb(246, 144, 144);
+  }

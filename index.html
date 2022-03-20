@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizza Place</title>
+</head>
+<body>
+<h1>Tatsy Pizza Spot</H1>
+<section>
+<p>Welcome to Tasty where you are guaranteed safe, halal and fresh Pizza.<br>
+Once you go tasty, there is no going back. <br>
+<p>Best part? You can pick your preffered crust at the same price!
+        <li>Crispy</li>
+        <li>Stuffed</li>
+        <li>Gluten-free</li>
+<p> Are you ready to step on the <br> Tasty side of life?</p>
+</section>
+
+<Div class="Prices">
+<table>
+<caption>Pizza Price List</caption>
+<br>
+    <tr>
+      <th>Description</th>
+      <th>Small</th>
+      <th>Medium</th>
+      <th>Large</th>
+   </tr>
+   <tr>
+      <td>Periperi Chicken</td>
+      <td>850</td>
+      <td>1300</td>
+      <td>2000</td>
+   </tr>
+   <tr>
+    <td>Chicken BBQ</td>
+    <td>800</td>
+    <td>1200</td>
+    <td>1800</td>
+   </tr>	 
+   <tr>
+        <td>Peri Chicken</td>
+        <td>800</td>
+        <td>1200</td>
+        <td>1800</td>
+   </tr>
+        <td>Veggie Spicy</td>
+        <td>500</td>
+        <td>900</td>
+        <td>1300</td>
+   </tr>
+    <tr>
+        <td>Periperi Chicken</td>
+        <td>800</td>
+        <td>1200</td>
+        <td>1800</td>
+   </tr>
+ </table>
+ 
+<table>
+    <caption>Toppings Price List</caption>
+    <br>
+        <tr>
+          <th>Description</th>
+          <th>Price</th>
+        <tr>
+            <td>Pineapple</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Mozarella Cheese</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>Peas</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Mushrooms</td>
+            <td>100</td>
+        </tr>
+       </tr>
+ </table>
+ 
+</div>
+<br>
+<div class="order" id="order">
+    <button>Order Now</button>
+</div>
+<br>
+<br>
+</div>
+<div class="show-content" id="show">
+<form id="myForm">
+    <h2>Select the type of pizza</h2>
+    <input type="radio" id="peri" class="type" name="type" >
+    <label for="peri">Periperi</label>
+    <input type="radio" id="bbq"class="type" name="type" >
+    <label for="bbq"> BBQ</label>
+    <input type="radio" id="haw" class="type"name="type">
+    <label for="haw">Hawaiian</label>
+    <input type="radio" id="veg"class="type" name="type">
+    <label for="veg"> Veggie</label>
+    <input type="radio" id="pep" class="type"name="type">
+    <label for="pep">Pepperoni</label>
+    <h2>Select the size of Pizza</h2>
+    <input type="radio" id="small" class="size" name="size">
+    <label for="small"> Small</label>
+    <input type="radio" id="medium"class="size" name="size" >
+    <label for="midi"> Medium</label>
+    <input type="radio" id="large" class="size" name="size" >
+    <label for="large"> Large</label>
+    
+    <h2>Select the toppings</h2>
+        <input type="radio" id="pine" class="topy"name="top">
+        <label for="pine"> Pineapple</label>
+        <input type="radio" id="moz" class="topy"name="top">
+        <label for="moz"> Mozarella Cheese</label>
+        <input type="radio" id="peas"class="topy" name="top">
+        <label for="peas"> Peas</label>
+        <input type="radio" id="mush" class="topy" name="top">
+        <label for="mush"> Mushrooms</label>
+        <br>
+        <br>
+    <label for="number">Quantity</label><input type="number" id="num" class="num" name="num" min="1">
+    <h2>Select the type of crust</h2>
+    <input type="radio" id="crusty" class="crust" name="crust" >
+    <label for="crusty"> Crusty</label>
+    <input type="radio" id="stuffed" class="crust" name="crust" >
+    <label for="stuffed"> Stuffed</label>
+    <input type="radio" id="gluten" class="crust"name="crust">
+    <label for="gluten"> Gluten-free</label>  
+    <br>
+    <br>
+    <input  name="form" type="submit" id="add-order" value="Add Order">
+    <input type="submit" id="submit"value="Submit">
+    <br>
+</form>
+<h2>Orders:</h2>
+          <ul id="orders">
+
+          </ul>
+</div>
+<div class="col-md-6">
+    <div id="show-orders">
+      <h2></h2>
+      <p>Type: <span class="pizza-type"></span></p>
+      <p>Size: <span class="pizza-size"></span></p>
+      <p>Toppings: <span class="pizza-toppings"></span></p>
+      <p>Quantity: <span class="pizza-quantity"></span></p>
+      <p>Crust:<span class="pizza-crust"></span></p>
+      <p> Order Summary:</p>
+      <ul id="order-summary">
+
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+
+
+    
+   
+    
+<h1>YOUR HOME FOR UNDENIABLY TASTY PIZZA</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>   
+</body>
+</html>
