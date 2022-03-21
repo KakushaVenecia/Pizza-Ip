@@ -42,7 +42,7 @@ Once you go tasty, there is no going back. <br>
     <td>1800</td>
    </tr>	 
    <tr>
-        <td>Peri Chicken</td>
+        <td>Hawaiian</td>
         <td>800</td>
         <td>1200</td>
         <td>1800</td>
@@ -53,7 +53,7 @@ Once you go tasty, there is no going back. <br>
         <td>1300</td>
    </tr>
     <tr>
-        <td>Periperi Chicken</td>
+        <td>Pepperoni</td>
         <td>800</td>
         <td>1200</td>
         <td>1800</td>
@@ -96,42 +96,42 @@ Once you go tasty, there is no going back. <br>
 <div class="show-content" id="show">
 <form id="myForm">
     <h2>Select the type of pizza</h2>
-    <input type="radio" id="peri" class="type" name="type" >
+    <input type="radio" id="peri" class="type" name="type"data-pizza-type="Periperi" >
     <label for="peri">Periperi</label>
-    <input type="radio" id="bbq"class="type" name="type" >
-    <label for="bbq"> BBQ</label>
-    <input type="radio" id="haw" class="type"name="type">
+    <input type="radio" id="bbq"class="type" name="type"data-pizza-type="BBQ" >
+    <label for="bbq"> BBQ</labela>
+    <input type="radio" id="haw" class="type"name="type"data-pizza-type="Hawaiian">
     <label for="haw">Hawaiian</label>
-    <input type="radio" id="veg"class="type" name="type">
+    <input type="radio" id="veg"class="type" name="type"data-pizza-type="Veggie">
     <label for="veg"> Veggie</label>
-    <input type="radio" id="pep" class="type"name="type">
+    <input type="radio" id="pep" class="type"name="type"data-pizza-type="Pepperoni">
     <label for="pep">Pepperoni</label>
     <h2>Select the size of Pizza</h2>
-    <input type="radio" id="small" class="size" name="size">
+    <input type="radio" id="small" class="size" name="size"data-pizza-size="Small">
     <label for="small"> Small</label>
-    <input type="radio" id="medium"class="size" name="size" >
+    <input type="radio" id="medium"class="size" name="size"data-pizza-size="Medium" >
     <label for="midi"> Medium</label>
-    <input type="radio" id="large" class="size" name="size" >
+    <input type="radio" id="large" class="size" name="size" data-pizza-size="Large">
     <label for="large"> Large</label>
     
     <h2>Select the toppings</h2>
-        <input type="radio" id="pine" class="topy"name="top">
+        <input type="radio" id="pine" class="topy"name="top" data-pizza-topy=""="Pineapple">
         <label for="pine"> Pineapple</label>
-        <input type="radio" id="moz" class="topy"name="top">
+        <input type="radio" id="moz" class="topy"name="top"data-pizza-topy="Mozarella Cheese">
         <label for="moz"> Mozarella Cheese</label>
-        <input type="radio" id="peas"class="topy" name="top">
+        <input type="radio" id="peas"class="topy" name="top"data-pizza-topy="Peas">
         <label for="peas"> Peas</label>
-        <input type="radio" id="mush" class="topy" name="top">
+        <input type="radio" id="mush" class="topy" name="top"data-pizza-topy="Mushrooms">
         <label for="mush"> Mushrooms</label>
         <br>
         <br>
-    <label for="number">Quantity</label><input type="number" id="num" class="num" name="num" min="1">
+    <label for="number">Quantity</label><input type="number" id="num" class="num" name="num"data-pizza-quantity="Quantity"min="1">
     <h2>Select the type of crust</h2>
-    <input type="radio" id="crusty" class="crust" name="crust" >
+    <input type="radio" id="crusty" class="crust" name="crust" data-pizza-crust="Crusty">
     <label for="crusty"> Crusty</label>
-    <input type="radio" id="stuffed" class="crust" name="crust" >
+    <input type="radio" id="stuffed" class="crust" name="crust" data-pizza-crust="Stuffed">
     <label for="stuffed"> Stuffed</label>
-    <input type="radio" id="gluten" class="crust"name="crust">
+    <input type="radio" id="gluten" class="crust"name="crust"data-pizza-crust="Gluten-free">
     <label for="gluten"> Gluten-free</label>  
     <br>
     <br>
@@ -144,20 +144,7 @@ Once you go tasty, there is no going back. <br>
 
           </ul>
 </div>
-<div class="col-md-6">
-    <div id="show-orders">
-      <h2></h2>
-      <p>Type: <span class="pizza-type"></span></p>
-      <p>Size: <span class="pizza-size"></span></p>
-      <p>Toppings: <span class="pizza-toppings"></span></p>
-      <p>Quantity: <span class="pizza-quantity"></span></p>
-      <p>Crust:<span class="pizza-crust"></span></p>
-      <p> Order Summary:</p>
-      <ul id="order-summary">
 
-      </ul>
-    </div>
-  </div>
 
 </div>
 

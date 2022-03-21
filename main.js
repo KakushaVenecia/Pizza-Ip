@@ -3,88 +3,64 @@
    $('#show').show();
  });
 
- function Pizza(type, size,topy,crust,quantity) {
+ function Pizza (type,size,topy,quantity,crust) {
   this.pizzaType= type;
   this.pizzaSize = size;
   this.pizzaTopy= topy;
   this.pizzaQuantity=quantity;
   this.pizzaCrust=crust;
-}
+  };
+
+  let type
+  let size
+  let topy
+  let quantity
+  let crust
+
+$(".type").on("change", (event) => {
+   type = event.target.getAttribute("data-pizza-type")
+   console.log(type)
+ })  
+ $(".size").on("change", (event) => {
+  size = event.target.getAttribute("data-pizza-size")
+  console.log(size)
+})  
+$(".topy").on("change", (event) => {
+  topy = event.target.getAttribute("data-pizza-topy")
+  console.log(topy)
+}) 
+$(".quantity").on("change", (event) => {
+  quantity = event.target.getAttribute("data-pizza-quantity")
+  console.log(quantity)
+})   
+$(".crust").on("change", (event) => {
+  crust= event.target.getAttribute("data-pizza-crust")
+  console.log(crust)
+})  
+
+
+// THE SAME THING.
+//  function eat(){
+//  }
+//  let eat = () => {
+//  }
+
  
-// $(document).ready(function() {
-//   $("#add-order").click(function(){
-//     $('#add-order').append(
-//       new pizzaType,
-//       new pizzaSize,
-//       new pizzaCrust,
-//       new pizzaTopy,
-//       new pizzaQuantity, 
-
-//       );
-    
-// function resetFields() {
-//         $("input#new-first-name").val("");
-//         $("input#new-last-name").val("");
-//         $("input.new-street").val("");
-//         $("input.new-city").val("");
-//         $("input.new-county").val("");
-//     }
+  let smallOne= new Pizza ("peri", "small", "pine","crusty");
+  let smallTwo= new Pizza ("bbq", "small", "pine","crusty");
+  let smallThree= new Pizza ("haw", "small", "pine","crusty");
+  let smallFour= new Pizza ("veg", "small", "pine","crusty");
+  let smallFive= new Pizza ("pep", "small", "pine","crusty");
 
 
 
-
-{/* var type = $('.type').on('click', function(event) {
-//   console.log(event.target.id)
-//   return type
  
-// });
-//  $('.size').on('click', function(event) {
-//    console.log(event.target.id)
-
-// });
-
-// $('.topy').on('click', function(event) {
-//   console.log(event.target.id)
-  
-// });
-// $('.crust').on('click', function(event) {
-//   console.log(event.target.id)
-   
-// });
-// $('#add').on('click'), function(event){
-//   event.preventDefault();
-// console.log(crust.id, top.id, type.id, size.id)
-// } */}
 
 
-
-
-
-// // let size =document.getElementsByClassName("size")[0].value;
-// // let type =document.getElementsByClassName("type")[0].value;
-// // let topy  =document.getElementsByClassName("topy")[0].value;
-// // let quantity =document.getElementsByClassName("num")[0].value;
-// // let crust =document.getElementsByClassName("crust")[0].value;
-
-// // var addOrder ={size,type,topy,quantity,crust};
-
-
-// // $('#add').click(function (event) {
-// //   event.preventDefault();
-// //   console.log(addOrder);
-// // });
-  
-
-
-
-
-
-  
-   
-
-// // var smallPizza= getElementById("small")
-// // var mediumPizza= getElementById("medium")
-// // var largePizza= getElementById("medium")
-// // var size =["small","medium","large"]
-// // var type=["Periperi","bbq","haw","veg","pep"]
-// // var crust=["crusty","stuffed","gluten"]
+ $('#add-order').click(function(event) {
+   event.preventDefault;
+   $("ul#orders").checked();
+   newPizza.forEach(function (Pizza){
+ $("ul#orders").append("<li>"+ newPizza.type+ "," + "</li>");
+  });
+});
