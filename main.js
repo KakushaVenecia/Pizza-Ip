@@ -9,8 +9,11 @@
   this.pizzaTopy= topy;
   this.pizzaQuantity=quantity;
   this.pizzaCrust=crust;
+  console.log (Pizza);
+
   };
 
+   
   // let Prices={ "size":{
   //   "small": 500,
   //   "medium": 800,
