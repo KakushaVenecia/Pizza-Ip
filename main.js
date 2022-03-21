@@ -11,15 +11,15 @@
   this.pizzaCrust=crust;
   };
 
-  let Prices={ "size":{
-    "small": 500,
-    "medium": 800,
+  // let Prices={ "size":{
+  //   "small": 500,
+  //   "medium": 800,
 
-  let type
-  let size
-  let topy
-  let quantity
-  let crust
+  // let type
+  // let size
+  // let topy
+  // let quantity
+  // let crust
 
 $(".type").on("change", (event) => {
    type = event.target.getAttribute("data-pizza-type")
@@ -40,22 +40,9 @@ $(".quantity").on("change", (event) => {
 $(".crust").on("change", (event) => {
   crust= event.target.getAttribute("data-pizza-crust")
   console.log(crust)
-})  
+});
 
 
-// THE SAME THING.
-//  function eat(){
-//  }
-//  let eat = () => {
-//  }
-
- 
-  let smallOne= new Pizza ("peri", "small", "pine","crusty");
-  let smallTwo= new Pizza ("bbq", "small", "pine","crusty");
-  let smallThree= new Pizza ("haw", "small", "pine","crusty");
-  let smallFour= new Pizza ("veg", "small", "pine","crusty");
-  let smallFive= new Pizza ("pep", "small", "pine","crusty");
-};
 
 
  
