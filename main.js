@@ -15,11 +15,11 @@
   //   "small": 500,
   //   "medium": 800,
 
-  // let type
-  // let size
-  // let topy
-  // let quantity
-  // let crust
+let type
+let size
+let topy
+let quantity
+let crust
 
 $(".type").on("change", (event) => {
    type = event.target.getAttribute("data-pizza-type")
@@ -41,6 +41,7 @@ $(".crust").on("change", (event) => {
   crust= event.target.getAttribute("data-pizza-crust")
   console.log(crust)
 });
+
 
 
 
