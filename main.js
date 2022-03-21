@@ -11,6 +11,10 @@
   this.pizzaCrust=crust;
   };
 
+  let Prices={ "size":{
+    "small": 500,
+    "medium": 800,
+
   let type
   let size
   let topy
@@ -51,16 +55,11 @@ $(".crust").on("change", (event) => {
   let smallThree= new Pizza ("haw", "small", "pine","crusty");
   let smallFour= new Pizza ("veg", "small", "pine","crusty");
   let smallFive= new Pizza ("pep", "small", "pine","crusty");
-
+};
 
 
  
 
 
- $('#add-order').click(function(event) {
-   event.preventDefault;
-   $("ul#orders").checked();
-   newPizza.forEach(function (Pizza){
- $("ul#orders").append("<li>"+ newPizza.type+ "," + "</li>");
-  });
-});
+
+
