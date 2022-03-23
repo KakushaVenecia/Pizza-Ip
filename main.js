@@ -1,28 +1,69 @@
- $('#order').click(function(event) {
-   event.preventDefault;
-   $('#show').show();
- });
+//  $('#order').click(function(event) {
+//    event.preventDefault;
+//    $('#show').show();
+//  });
+var type
+var size
+var topy
+var quantity
+var crust
 
- function Pizza (type,size,topy,quantity,crust) {
-  this.pizzaType= type;
-  this.pizzaSize = size;
-  this.pizzaTopy= topy;
-  this.pizzaQuantity=quantity;
-  this.pizzaCrust=crust;
-  console.log (Pizza);
+var orders=[]
 
+$('#add-order').click(function(event) {
+     event.preventDefault();
+     addOrder();
+   });
+  
+
+
+
+
+  function addOrder (){
+   const order= getOrder();
+    orders.push(order);
+      displayOrder(orders);
   };
+  function getOrder (){
+    const order={type,size,topy,quantity, crust};
+    console.log(order);
+    return order;
+  };
+  function displayOrder(orders){
+    let orderList="";
+    orders.forEach(order => {
+      orderList+=`<li> Type: ${order.type}, Size: ${order.size} Toppings: ${order.topy}, Quantity: ${order.quantity}, Crust:${order.crust}</li>`;
+    });
+    document.getElementById("orders").innerHTML= orderList;
+console.log(orderList);
+  }
+  
+
+//  function Pizza (type,size,topy,quantity,crust) {
+//   this.pizzaType= type;
+//   this.pizzaSize = size;
+//   this.pizzaTopy= topy;
+//   this.pizzaQuantity=quantity;
+//   this.pizzaCrust=crust;
+//   console.log (Pizza);
+//   };
+
+//   const periperi{
+//     size:small,
+//     price:850,
+//     crust:stuffed,    
+//   },
+// {   size:medium,
+//     price:850,
+//     crust:stuffed, 
+
+// },
 
    
   // let Prices={ "size":{
   //   "small": 500,
   //   "medium": 800,
 
-let type
-let size
-let topy
-let quantity
-let crust
 
 $(".type").on("change", (event) => {
    type = event.target.getAttribute("data-pizza-type")
