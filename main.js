@@ -1,7 +1,9 @@
-//  $('#order').click(function(event) {
-//    event.preventDefault;
-//    $('#show').show();
-//  });
+ $('#order').click(function(event) {
+   event.preventDefault();
+   $('#show').show();
+ });
+
+ 
 var type
 var size
 var topy
