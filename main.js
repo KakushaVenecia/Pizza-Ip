@@ -3,7 +3,6 @@
    $('#show').show();
  });
 
- 
 var type
 var size
 var topy
@@ -17,10 +16,6 @@ $('#add-order').click(function(event) {
      addOrder();
    });
   
-
-
-
-
   function addOrder (){
    const order= getOrder();
     orders.push(order);
@@ -80,8 +75,8 @@ $(".topy").on("change", (event) => {
   console.log(topy)
 }) 
 $(".quantity").on("change", (event) => {
-  quantity = event.target.getAttribute("data-pizza-quantity")
-  console.log(quantity)
+  quantity = event.target.getElementById("num")
+  console.log(typeof quantity)
 })   
 $(".crust").on("change", (event) => {
   crust= event.target.getAttribute("data-pizza-crust")
