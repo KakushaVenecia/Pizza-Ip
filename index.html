@@ -1,178 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasty Pizza</title>
+    <meta name="description" content="Order delicious pizza from Tasty Pizza" />
     <link rel="stylesheet" href="style.css">
-    <title>Pizza Place</title>
-</head>
-<body>
-<h1>Tatsy Pizza Spot</H1>
-<section>
-<p>Welcome to Tasty where you are guaranteed safe, halal and fresh Pizza.<br>
-Once you go tasty, there is no going back. <br>
-<p>Best part? You can pick your preffered crust at the same price!
-        <li>Crispy</li>
-        <li>Stuffed</li>
-        <li>Gluten-free</li>
-<p> Are you ready to step on the <br> Tasty side of life?</p>
-</section>
+  </head>
 
-<Div class="Prices">
-<table>
-<caption>Pizza Price List</caption>
-<br>
-    <tr>
-      <th>Description</th>
-      <th>Small</th>
-      <th>Medium</th>
-      <th>Large</th>
-   </tr>
-   <tr>
-      <td>Periperi Chicken</td>
-      <td>850</td>
-      <td>1300</td>
-      <td>2000</td>
-   </tr>
-   <tr>
-    <td>Chicken BBQ</td>
-    <td>800</td>
-    <td>1200</td>
-    <td>1800</td>
-   </tr>	 
-   <tr>
-        <td>Hawaiian</td>
-        <td>800</td>
-        <td>1200</td>
-        <td>1800</td>
-   </tr>
-        <td>Veggie Spicy</td>
-        <td>500</td>
-        <td>900</td>
-        <td>1200</td>
-   </tr>
-    <tr>
-        <td>Pepperoni</td>
-        <td>800</td>
-        <td>1200</td>
-        <td>1800</td>
-   </tr>
- </table>
- 
-<table>
-    <caption>Toppings Price List</caption>
-    <br>
-        <tr>
-          <th>Description</th>
-          <th>Price</th>
-        <tr>
-            <td>Pineapple</td>
-            <td>100</td>
-        </tr>
-        <tr>
-            <td>Mozarella Cheese</td>
-            <td>200</td>
-        </tr>
-        <tr>
-            <td>Peas</td>
-            <td>100</td>
-        </tr>
-        <tr>
-            <td>Mushrooms</td>
-            <td>100</td>
-        </tr>
-       </tr>
- </table>
- 
-</div>
-<br>
-<div class="order" id="order">
-    <button>Order Now</button>
-</div>
-<br>
-<br>
-</div>
-<div class="show-content" id="show">
-<form id="myForm">
-    <h2>Select the type of pizza</h2>
-    <input type="radio" id="peri" class="type" name="type"data-pizza-type="Periperi" >
-    <label for="peri">Periperi</label>
-    <input type="radio" id="bbq"class="type" name="type"data-pizza-type="BBQ" >
-    <label for="bbq"> BBQ</labela>
-    <input type="radio" id="haw" class="type"name="type"data-pizza-type="Hawaiian">
-    <label for="haw">Hawaiian</label>
-    <input type="radio" id="veg"class="type" name="type"data-pizza-type="Veggie">
-    <label for="veg"> Veggie</label>
-    <input type="radio" id="pep" class="type"name="type"data-pizza-type="Pepperoni">
-    <label for="pep">Pepperoni</label>
-    <h2>Select the size of Pizza</h2>
-    <input type="radio" id="small" class="size" name="size"data-pizza-size="Small">
-    <label for="small"> Small</label>
-    <input type="radio" id="medium"class="size" name="size"data-pizza-size="Medium" >
-    <label for="midi"> Medium</label>
-    <input type="radio" id="large" class="size" name="size" data-pizza-size="Large">
-    <label for="large"> Large</label>
-    <h2>Select the toppings</h2>
-        <input type="radio" id="pine" class="topy"name="top" data-pizza-topy=""="Pineapple">
-        <label for="pine"> Pineapple</label>
-        <input type="radio" id="moz" class="topy"name="top"data-pizza-topy="Mozarella Cheese">
-        <label for="moz"> Mozarella Cheese</label>
-        <input type="radio" id="peas"class="topy" name="top"data-pizza-topy="Peas">
-        <label for="peas"> Peas</label>
-        <input type="radio" id="mush" class="topy" name="top"data-pizza-topy="Mushrooms">
-        <label for="mush"> Mushrooms</label>
-        <br>
-        <br>
-    <label for="number">Quantity</label><input type="number" id="num" class="num" name="num"data-pizza-quantity="Quantity"min="1">
-    <h2>Select the type of crust</h2>
-    <input type="radio" id="crusty" class="crust" name="crust" data-pizza-crust="Crusty">
-    <label for="crusty"> Crusty</label>
-    <input type="radio" id="stuffed" class="crust" name="crust" data-pizza-crust="Stuffed">
-    <label for="stuffed"> Stuffed</label>
-    <input type="radio" id="gluten" class="crust"name="crust"data-pizza-crust="Gluten-free">
-    <label for="gluten"> Gluten-free</label>  
-    <br>
-    <br>
-    <button id="add-order" >Add Order</button>
-    <input type="submit" id="submit"value="Submit">
-    <br>
-</form>
-<h2>Orders:</h2>
-          <ul id="orders">
-            <li>
-                
-            </li>
-
+  <body>
+    <div class="container">
+      <header>
+        <h1>Tasty Pizza Spot</h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order">Order</a></li>
           </ul>
-</div>
+        </nav>
+      </header>
 
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h2>Welcome to Tasty Pizza</h2>
+          <p>Where you are guaranteed safe, halal and fresh Pizza.</p>
+          <p>Once you go tasty, there is no going back.</p>
+          <p>Best part? You can pick your preferred crust at the same price!</p>
+          <ul>
+            <li>Crispy</li>
+            <li>Stuffed</li>
+            <li>Gluten-free</li>
+          </ul>
+          <p>Are you ready to step on the Tasty side of life?</p>
+          <button id="order-btn" class="btn">Order Now</button>
+        </div>
+      </section>
 
-</div>
+      <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        
+        <div class="price-tables">
+          <table>
+            <caption>Pizza Price List</caption>
+            <tr>
+              <th>Description</th>
+              <th>Small</th>
+              <th>Medium</th>
+              <th>Large</th>
+            </tr>
+            <tr>
+              <td>Periperi Chicken</td>
+              <td>850</td>
+              <td>1300</td>
+              <td>2000</td>
+            </tr>
+            <tr>
+              <td>Chicken BBQ</td>
+              <td>800</td>
+              <td>1200</td>
+              <td>1800</td>
+            </tr>
+            <tr>
+              <td>Hawaiian</td>
+              <td>800</td>
+              <td>1200</td>
+              <td>1800</td>
+            </tr>
+            <tr>
+              <td>Veggie Spicy</td>
+              <td>500</td>
+              <td>900</td>
+              <td>1200</td>
+            </tr>
+            <tr>
+              <td>Pepperoni</td>
+              <td>800</td>
+              <td>1200</td>
+              <td>1800</td>
+            </tr>
+          </table>
 
+          <table>
+            <caption>Toppings Price List</caption>
+            <tr>
+              <th>Description</th>
+              <th>Price</th>
+            </tr>
+            <tr>
+              <td>Pineapple</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Mozarella Cheese</td>
+              <td>200</td>
+            </tr>
+            <tr>
+              <td>Peas</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Mushrooms</td>
+              <td>100</td>
+            </tr>
+          </table>
+        </div>
+      </section>
 
+      <section id="order" class="order-section">
+        <h2>Place Your Order</h2>
+        <div id="order-form" class="hidden">
+          <form id="pizza-form">
+            <div class="form-group">
+              <h3>Select the type of pizza</h3>
+              <div class="radio-group">
+                <div class="radio-item">
+                  <input type="radio" id="peri" class="type" name="type" data-pizza-type="Periperi">
+                  <label for="peri">Periperi</label>
+                </div>
+                <div class="radio-item">
+                  <input type="radio" id="bbq" class="type" name="type" data-pizza-type="BBQ">
+                  <label for="bbq">BBQ</label>
+                </div>
+                <div class="radio-item">
+                  <input type="radio" id="haw" class="type" name="type" data-pizza-type="Hawaiian">
+                  <label for="haw">Hawaiian</label>
+                </div>
+                <div class="radio-item">
+                  <input type="radio" id="veg" class="type" name="type" data-pizza-type="Veggie">
+                  <label for="veg">Veggie</label>
+                </div>
+                <div class="radio-item">
+                  <input type="radio" id="pep" class="type" name="type" data-pizza-type="Pepperoni">
+                  <label for="pep">Pepperoni</label>
+                </div>
+              </div>
+            </div>
 
-    
+            <div class="form-group">
+              <h3>Select the size of Pizza</h3>
+              <div class="radio-group">
+                <div class="radio-item">
+                  <input type="radio" id="small" class="size" name="size" data-pizza-size="Small">
+                  <label for="small">Small</label>
+                </div>
+                <div class="radio-item">
+                  <input type="radio" id="medium" class="size" name="size" data-pizza-size="Medium">
+                  <label for="medium">Medium</label>
+                </div>
+                <div class="radio-item">
+                  <input type="radio" id="large" class="size" name="size" data-pizza-size="Large">
+                  <label for="large">Large</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <h3>Select the toppings</h3>
+              <div class="radio-group">
+                <div class="radio-item">
+                  <input type="radio" id="pine" class="topy" name="top" data-pizza-topy="Pineapple">
+                  <label for="pine">Pineapple</label>
+                </div>
+                <div class="radio-item">
+                  <input type="radio" id="moz" class="topy" name="top" data-pizza-topy="Mozarella Cheese">
+                  <label for="moz">Mozarella Cheese</label>
+                </div>
+                <div class="radio-item">
+                  <input type="radio" id="peas" class="topy" name="top" data-pizza-topy="Peas">
+                  <label for="peas">Peas</label>
+                </div>
+                <div class="radio-item">
+                  <input type="radio" id="mush" class="topy" name="top" data-pizza-topy="Mushrooms">
+                  <label for="mush">Mushrooms</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <h3>Select the type of crust</h3>
+              <div class="radio-group">
+                <div class="radio-item">
+                  <input type="radio" id="crusty" class="crust" name="crust" data-pizza-crust="Crusty">
+                  <label for="crusty">Crusty</label>
+                </div>
+                <div class="radio-item">
+                  <input type="radio" id="stuffed" class="crust" name="crust" data-pizza-crust="Stuffed">
+                  <label for="stuffed">Stuffed</label>
+                </div>
+                <div class="radio-item">
+                  <input type="radio" id="gluten" class="crust" name="crust" data-pizza-crust="Gluten-free">
+                  <label for="gluten">Gluten-free</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="quantity">Quantity:</label>
+              <input type="number" id="quantity" name="quantity" min="1" value="1">
+            </div>
+
+            <div class="form-actions">
+              <button type="button" id="add-order-btn" class="btn">Add to Order</button>
+              <button type="button" id="submit-order-btn" class="btn">Place Order</button>
+            </div>
+          </form>
+        </div>
+
+        <div id="order-summary" class="order-summary">
+          <h3>Your Orders</h3>
+          <ul id="orders-list"></ul>
+          <div id="total-price" class="total-price">Total: 0</div>
+        </div>
+      </section>
+
+      <footer>
+        <p>&copy; 2025 Tasty Pizza Spot. All rights reserved.</p>
+      </footer>
+    </div>
+
    
-    
-<h1>YOUR HOME FOR UNDENIABLY TASTY PIZZA</h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="main.js"></script>   
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
